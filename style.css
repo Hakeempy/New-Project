@@ -146,6 +146,7 @@ CONTACT
 form {
     width: 100%;
     max-width: 600px;
+    padding: 0px 24px;
 }
 
 input, textarea {
@@ -178,4 +179,60 @@ footer {
 
 .footer_link {
     padding: 0px 16px;
+}
+
+
+/*SMALL PHONES, TABLETS AND LARGE PHONES */
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .home_description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .sub-header {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .home_description_button {
+        max-width: 240px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section-description {
+        flex-direction: column;
+    }
+
+    .about-image-wrapper {
+        width: 100%;
+    }
+
+    #discord .section-description {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+    .footer_logo {
+        max-width: 360px;
+    }
+
+    .footer_link {
+        padding: 0px 4px;
+    }
 }
